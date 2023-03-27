@@ -1,0 +1,73 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - singer
+  - lyrics
+  - songs
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_song:
+  - text: "Would you like to listen a song?"
+
+  utter_songs:
+  - text: "Yup!! Here are some top picks specially for you"
+  - text: "https://youtu.be/3x2ABSAMVno"
+
+  utter_play:
+  - text: "Here you go! https://youtu.be/3x2ABSAMVno"
+
+  utter_lyrics:
+  - text: "I was five and he was six
+           We rode on horses made of sticks
+           He wore black and I wore white
+           He would always win the fight
+           Bang bang, he shot me down
+           Bang bang, I hit the ground
+           Bang bang, that awful sound
+           Bang bang, my baby shot me down
+           I was five and he was six
+           We rode on horses made of sticks
+           He wore black and I wore white
+           He would always win the fight
+           Bang bang, he shot me down
+           Bang bang, I hit the ground
+           Bang bang, that awful sound
+           Bang bang, my baby shot me down
+           Bang bang, he shot me down
+           Bang bang, I hit the ground
+           Bang bang, that awful sound
+           Bang bang, my baby shot me down"
+
+  utter_singer:
+  - text: "David Guetta"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

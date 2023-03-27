@@ -1,0 +1,28 @@
+version: "3.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Share Lyrics anytime the user ask for lyrics
+  steps:
+  - intent: lyrics
+  - action: utter_lyrics
+
+- rule: Share songs anytime the user ask for more songs
+  steps:
+  - intent: songs
+  - action: utter_songs
+
+- rule: Share singer anytime the user ask for singer name
+  steps:
+  - intent: singer
+  - action: utter_singer
